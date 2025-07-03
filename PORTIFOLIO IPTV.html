@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP STREAMINGS 098 - Melhor IPTV do Nordeste</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00FF7F; /* Verde cana */
+            --secondary: #003366; /* Azul escuro */
+            --dark: #000000; /* Preto */
+            --light: #FFFFFF; /* Branco */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--dark), var(--secondary), var(--dark));
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .main-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5rem;
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+        }
+        
+        nav {
+            background-color: var(--secondary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--light);
+            text-shadow: 0 0 5px var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid rgba(0, 255, 127, 0.2);
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .plan-card {
+            background-color: rgba(0, 51, 102, 0.7);
+            border: 2px solid var(--primary);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .plan-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--primary);
+        }
+        
+        .plan-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .plan-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--light);
+            margin: 1rem 0;
+        }
+        
+        .plan-period {
+            color: #AAAAAA;
+            font-size: 0.9rem;
+        }
+        
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .plan-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .plan-features li:before {
+            content: "✓";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--light);
+            box-shadow: 0 0 10px var(--primary);
+        }
+        
+        .test-section {
+            background-color: rgba(0, 51, 102, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .test-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border: 1px solid var(--primary);
+            background-color: rgba(0,0,0,0.5);
+            color: var(--light);
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            box-shadow: 0 0 10px #25D366;
+        }
+        
+        footer {
+            background-color: var(--secondary);
+            color: var(--light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+        /* NOVOS ESTILOS PARA OS BOTÕES DE DISPOSITIVOS */
+        .devices-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .device-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .device-btn:hover {
+            background-color: var(--light);
+            box-shadow: 0 0 10px var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            nav li {
+                margin: 0 0.5rem;
+            }
+            
+            .plans-container {
+                grid-template-columns: 1fr;
+            }
+
+            .devices-container {
+                gap: 8px;
+            }
+            
+            .device-btn {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+                min-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="main-title">TOP STREAMINGS 098</h1>
+            <p>A melhor experiência em IPTV do Nordeste</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#test">Teste Grátis</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section id="home">
+            <h2>Bem-vindo ao TOP STREAMINGS 098</h2>
+            <p>🔹 Entretenimento sem limites, com qualidade e estabilidade que você merece!</p>
+
+            <p>Apresentamos nosso serviço de IPTV Premium com o poderoso servidor BLAZE, referência em estabilidade, velocidade e qualidade de imagem. Perfeito para quem busca o melhor custo-benefício e uma experiência completa de TV, direto do conforto da sua casa.</p>
+            
+            <p>🤖O QUE OFERECEMOS DE MELHOR:</p>
+            <p>✅  +2.500 canais ao vivo (nacionais, internacionais, esportivos, infantis, filmes, séries e mais)</p>
+            <p>✅  +50.000 filmes e séries atualizados diariamente</p>
+            <p>✅  Qualidade Full HD | 4K | HDR, sem travamentos</p>
+            <p>✅  Conteúdo adulto (opcional e com controle por senha)</p>
+            <p>✅  Replays, programação 24h, EPG (guia de canais)</p>
+            <p>✅ Suporte técnico ágil e humanizado</p>
+
+            <p>DISPOSITIVOS DISPONÍVEIS:</p>
+
+            <div class="devices-container">
+                <a href="#test" class="device-btn">TV BOX</a>
+                <a href="#test" class="device-btn">SMART TV</a>
+                <a href="#test" class="device-btn">CELULAR</a>
+                <a href="#test" class="device-btn">COMPUTADOR</a>
+                <a href="#test" class="device-btn">TABLET</a>
+                <a href="#test" class="device-btn">FIRE STICK</a>
+            </div>
+
+            <p>🚀 Por que escolher nosso IPTV?</p>
+            <p>Servidor BLAZE: Um dos mais rápidos e estáveis do Brasil</p>
+            <p>Ativação rápida: Em até 5 minutos após o pagamento</p>
+            <p>Testes gratuitos: Experimente antes de contratar</p>
+            <p>Planos acessíveis: Mensal, trimestral, semestral e anual</p>
+            <p>Atendimento via WhatsApp direto e rápido</p>
+            
+            <div class="highlights" style="margin-top: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background-color: rgba(0, 51, 102, 0.5); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary);">
+                        <h3 style="color: var(--primary); margin-top: 0;"><i class="fas fa-tv"></i> +2.500 Canais</h3>
+                        <p>Todos os canais nacionais e internacionais que você precisa</p>
+                    </div>
+                    <div style="background-color: rgba(0, 51, 102, 0.5); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary);">
+                        <h3 style="color: var(--primary); margin-top: 0;"><i class="fas fa-film"></i> +10.000 VOD</h3>
+                        <p>Filmes e séries atualizados diariamente</p>
+                    </div>
+                    <div style="background-color: rgba(0, 51, 102, 0.5); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary);">
+                        <h3 style="color: var(--primary); margin-top: 0;"><i class="fas fa-futbol"></i> Eventos Esportivos</h3>
+                        <p>Todos os campeonatos nacionais e internacionais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services">
+            <h2>Como Funciona</h2>
+            <p>Nosso serviço de IPTV é simples e fácil de usar:</p>
+            
+            <ol style="max-width: 800px; margin: 1.5rem auto; padding-left: 1.5rem;">
+                <li style="margin-bottom: 1rem;"><strong>Escolha seu plano:</strong> Selecione o plano que melhor atende suas necessidades</li>
+                <li style="margin-bottom: 1rem;"><strong>Receba suas credenciais:</strong> Enviamos por e-mail ou WhatsApp seus dados de acesso</li>
+                <li style="margin-bottom: 1rem;"><strong>Instale o aplicativo:</strong> Baixe nosso app ou use um player compatível</li>
+                <li style="margin-bottom: 1rem;"><strong>Configure e assista:</strong> Insira suas credenciais e comece a assistir</li>
+                <li><strong>Suporte 24/7:</strong> Nossa equipe está sempre disponível para ajudar</li>
+            </ol>
+            
+            <p style="text-align: center; margin-top: 2rem;">Compatível com Smart TVs, Android TV Box, celulares, tablets e computadores.</p>
+        </section>
+        
+        <section id="plans">
+            <h2>Nossos Planos</h2>
+            <p>Escolha o plano ideal para você e sua família</p>
+            
+            <div class="plans-container">
+                <div class="plan-card">
+                    <img src="c:\Users\ronal\Desktop\LOJA VIRTUAL\FUTEBOL.jpg" alt="Plano Mensal" class="plan-image">
+                    <h3 class="plan-title">Mensal</h3>
+                    <div class="plan-price">R$ 20,00</div>
+                    <div class="plan-period">1 mês de acesso</div>
+                    <ul class="plan-features">
+                        <li>2.500+ Canais</li>
+                        <li>1 Conexão</li>
+                        <li>Suporte Avançado</li>
+                        <li>EPG (Guia de Programação)</li>
+                    </ul>
+                    <a href="#test" class="btn">Assinar Agora</a>
+                </div>
+                
+                <div class="plan-card">
+                    <img src="c:\Users\ronal\Desktop\LOJA VIRTUAL\TEMPO DE GUERRA.jpg" alt="Plano Trimestral" class="plan-image">
+                    <h3 class="plan-title">Trimestral</h3>
+                    <div class="plan-price">R$ 50,00</div>
+                    <div class="plan-period">3 meses de acesso</div>
+                    <ul class="plan-features">
+                        <li>2.500+ Canais</li>
+                        <li>1 Conexão</li>
+                        <li>Suporte Avançado</li>
+                        <li>EPG (Guia de Programação)</li>
+                    </ul>
+                    <a href="#test" class="btn">Assinar Agora</a>
+                </div>
+                
+                <div class="plan-card">
+                    <img src="c:\Users\ronal\Desktop\LOJA VIRTUAL\RIK MORTY.jpg" alt="Plano Semestral" class="plan-image">
+                    <h3 class="plan-title">Semestral</h3>
+                    <div class="plan-price">R$ 100,00</div>
+                    <div class="plan-period">6 meses de acesso</div>
+                    <ul class="plan-features">
+                        <li>2.500+ Canais</li>
+                        <li>1 Conexão</li>
+                        <li>Suporte Avançado</li>
+                        <li>EPG (Guia de Programação)</li>
+                    </ul>
+                    <a href="#test" class="btn">Assinar Agora</a>
+                </div>
+                
+                <div class="plan-card">
+                    <img src="c:\Users\ronal\Desktop\LOJA VIRTUAL\NARUTO.jpg" alt="Plano Anual" class="plan-image">
+                    <h3 class="plan-title">Anual</h3>
+                    <div class="plan-price">R$ 210,00</div>
+                    <div class="plan-period">12 meses de acesso</div>
+                    <ul class="plan-features">
+                        <li>2.500+ Canais</li>
+                        <li>1 Conexão</li>
+                        <li>Suporte Avançado</li>
+                        <li>EPG (Guia de Programação)</li>
+                    </ul>
+                    <a href="#test" class="btn">Assinar Agora</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="test">
+            <h2>Teste Grátis</h2>
+            <p>Solicite um teste gratuito de 6 horas para experimentar nossa qualidade</p>
+            
+            <div class="test-section">
+                <div class="test-form">
+                    <div class="form-group">
+                        <label for="firstName">Primeiro Nome:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Sobrenome:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">WhatsApp:</label>
+                        <input type="tel" id="phone" name="phone" value="(98) " required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Onde deseja instalar o pacote de canais?</label>
+                        <select id="deviceType" required>
+                            <option value="">Selecione...</option>
+                            <option value="SMART TV">SMART TV</option>
+                            <option value="CELULAR">CELULAR</option>
+                            <option value="TABLET">TABLET</option>
+                            <option value="NOTEBOOK">NOTEBOOK</option>
+                            <option value="TV BOX">TV BOX</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Qual a marca do dispositivo?</label>
+                        <select id="deviceBrand" required>
+                            <option value="">Selecione...</option>
+                            <option value="SAMSUNG">SAMSUNG</option>
+                            <option value="LG">LG</option>
+                            <option value="LENOVO">LENOVO</option>
+                            <option value="AIWA">AIWA</option>
+                            <option value="AOC ROKU">AOC ROKU</option>
+                            <option value="PHILIPS">PHILIPS</option>
+                            <option value="PHILCO">PHILCO</option>
+                            <option value="BRITÂNIA">BRITÂNIA</option>
+                            <option value="APPLE">APPLE</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Tem Play Store no dispositivo?</label>
+                        <select id="hasPlayStore" required>
+                            <option value="">Selecione...</option>
+                            <option value="SIM">SIM</option>
+                            <option value="NÃO">NÃO</option>
+                        </select>
+                    </div>
+                    
+                    <a href="#" class="whatsapp-btn" id="sendTestRequest">
+                        <i class="fab fa-whatsapp"></i> Solicitar Teste via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações</p>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/5598985858958" class="whatsapp-btn" style="display: inline-flex;">
+                    <i class="fab fa-whatsapp"></i> (98) 98585-8958
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 TOP STREAMINGS 098. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p><small>Este serviço não transmite nenhum canal por conta própria e não é responsável por qualquer conteúdo transmitido.</small></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('sendTestRequest').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const phone = document.getElementById('phone').value.replace(/\D/g, '');
+            const deviceType = document.getElementById('deviceType').value;
+            const deviceBrand = document.getElementById('deviceBrand').value;
+            const hasPlayStore = document.getElementById('hasPlayStore').value;
+            
+            if (!firstName || !lastName || !phone || !deviceType || !deviceBrand || !hasPlayStore) {
+                alert('Por favor, preencha todos os campos do formulário.');
+                return;
+            }
+            
+            const message = `Olá, gostaria de solicitar um teste gratuito do TOP STREAMINGS 098.\n\n` +
+                           `Nome: ${firstName} ${lastName}\n` +
+                           `Dispositivo: ${deviceType}\n` +
+                           `Marca: ${deviceBrand}\n` +
+                           `Tem Play Store: ${hasPlayStore}\n\n` +
+                           `Por favor, envie as instruções para instalação.`;
+            
+            const whatsappUrl = `https://wa.me/5598985858958?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+        
+        // Máscara para o telefone
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length > 2 && value.length <= 6) {
+                value = value.replace(/^(\d{2})(\d{0,4})/, '($1) $2');
+            } else if (value.length > 6 && value.length <= 11) {
+                value = value.replace(/^(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+            } else if (value.length > 11) {
+                value = value.replace(/^(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+            }
+            
+            e.target.value = value;
+        });
+
+        // Adicionando scroll suave para os links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
